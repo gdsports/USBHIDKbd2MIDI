@@ -71,6 +71,18 @@ not need to be installed.
 
 Install the MIDI Library by Forty Seven Effects using the IDE library manager.
 
+## Arduino Upload
+
+When using USB host mode, uploading new code requires double pressing the
+Trinket M0 reset button. Once USB host mode is used, the Trinket M0 no longer
+appears as a serial/COM port so the Arduino IDE thinks it is not connected.
+The solution is to force the Trinket M0 into upload mode by double pressing the
+reset button. Then start the upload via the IDE. This may take a few tries to
+get the timing right.
+
+Doing it in the opposite order also works. Start the IDE upload then when the
+IDE saying "Uploading" press the Trinket M0 reset button.
+
 ## Connections
 
 |5V DC   |Trinket M0  |MIDI breakout|
